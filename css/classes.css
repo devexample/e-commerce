@@ -21,5 +21,6 @@
 .size.big { font-size: 1.2em; }
 .text.blue { color: #0077bd; }
 .text.dark.gray { color: #666; }
+.valign.middle { vertical-align: middle; }
 .w50per { width: 50%; }
 .w100per { width: 100%; }
