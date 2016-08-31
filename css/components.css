@@ -8,7 +8,7 @@
   color: rgba(0, 0, 0, 0.6);;
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.9em;
   font-weight: bold;
   outline: none;
   padding: 10px 25px;
@@ -76,12 +76,14 @@
   color: #8d8d8d;
   cursor: pointer;
   display: flex;
-  padding: 0 10px;
-  position: relative;
+  padding: 0 15px;
+  /*position: relative;*/
   text-decoration: none;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 0.8em;
 }
+
+.menu .menu { font-size: 1em; }
 .menu .item:hover {
   color: #0077bd
 }

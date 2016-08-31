@@ -1,22 +1,59 @@
-@font-face {
-    font-family:'fontello';
-    /*src: url("https://clickbalance.com/wp-content/themes/cb/assets/fonts/icons/fontello.eot?#iefix") format("embedded-opentype");*/
-    src: url("https://clickbalance.com/wp-content/themes/cb/assets/fonts/icons/fontello.woff") format("woff");
-    /*src: url("https://clickbalance.com/wp-content/themes/cb/assets/fonts/icons/fontello.ttf") format("truetype");
-    src: url("https://clickbalance.com/wp-content/themes/cb/assets/fonts/icons/fontello.svg?#fontello") format("svg");*/
+/*============================================================================*/
+/*=== Reset ==================================================================*/
+/*============================================================================*/
+* { font-family: 'Open Sans', sans-serif; }
+*:not(h1,h2,h3,h4,h5) { font-size: 15px; }
+i { font-weight: 300 !important; }
+a {
+  color: #0077be;
+  text-decoration: none;
+}
+a:hover {
+  color: #2eb6ec;
+  text-decoration: underline;;
 }
 
-/*
-@font-face{
-  font-family:'fontello';
-  src:url("https://clickbalance.com/wp-content/themes/cb/assets/fonts/icons/fontello.eot");
-  src:
+body {
 
-  font-weight:normal;
-  font-style:normal;
+  margin: 0;
+  padding: 0;
 }
-*/
 
+h1,h2,h3,h4,h5 { font-weight: 300; }
+h1 { font-size: 2.5em; }
+h2 { font-size: 1.8em; }
+
+/*h2 { font-size: 1.8em; font-weight: 300; }
+h3 { font-size: 1.6em; font-weight: 300; }
+h4 { font-size: 1.4em; font-weight: 300; }
+h5 { font-size: 1.2em; font-weight: 300; }
+h1 strong { font-size: 1em; font-weight: bold; }*/
+
+
+/*============================================================================*/
+/*=== Footer =================================================================*/
+/*============================================================================*/
+footer {
+  background-color: #485b67;
+  color: #cdcbcb;
+}
+
+footer a, footer a:hover {
+  color: #cdcbcb;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5 {
+  color: white;
+}
+
+footer .inline.links a {
+  display: inline-block;
+  padding: 0 50px 20px 0;
+}
 
 /*============================================================================*/
 /*=== Ad =====================================================================*/
@@ -25,6 +62,7 @@ section.advertisement {
   background-image: url('../images/presentation.jpg');
   background-size: cover;
 }
+section.advertisement h1 { margin: 10px 0; }
 /*============================================================================*/
 /*=== Grid ===================================================================*/
 /*============================================================================*/
@@ -87,8 +125,10 @@ section h2:first-child {
 /*=== Tabs =================================================================*/
 /*============================================================================*/
 .tabs.container {
+  background-color: white;
   border-radius: 10px 10px 0 0;
   box-shadow: 0px -2px 10px -1px rgba(0,0,0,0.1);
+  min-height: 300px;
   padding: 0;
 }
 .tabs.container > .tabs {
@@ -132,33 +172,6 @@ section h2:first-child {
 .tabs.container > .content {
   background-color: white;
 }
-/*============================================================================*/
-/*=== Header =================================================================*/
-/*============================================================================*/
-* {
-  font-family: 'Open Sans', sans-serif;
-}
-i { font-weight: 300 !important; }
-a {
-  color: #0077be;
-  text-decoration: none;
-}
-a:hover {
-  color: #2eb6ec;
-  text-decoration: underline;;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-h1 { font-size: 2.5em; font-weight: 300; }
-h2 { font-size: 1.8em; font-weight: 300; }
-h3 { font-size: 1.6em; font-weight: 300; }
-h4 { font-size: 1.4em; font-weight: 300; }
-h5 { font-size: 1.2em; font-weight: 300; }
-h1 strong { font-size: 1em; font-weight: bold; }
 
 
 /*============================================================================*/
@@ -167,44 +180,31 @@ h1 strong { font-size: 1em; font-weight: bold; }
 header {
   border-bottom: 1px solid #ddd;
   box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+  background-color: white;
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header .menu {
-  height: 58px;
-  padding: 0 100px;
+  min-height: 58px;
 }
 
 header .top.section {
   border-bottom: 1px solid #ddd;
 }
+/*header.position.fixed .top.section {display: none;}*/
+
+header .top.section .menu .item { font-size: 1em; font-weight: normal; }
 /*============================================================================*/
 /*=== Main ===================================================================*/
 /*============================================================================*/
-.presentation {
-  background-image: url('../images/presentation.jpg');
-  background-size: cover;
-  color: white;
-  padding: 10px 80px;
+main.fixed {
+  padding-top: 58px;
 }
-
-footer {
-  background-color: #485b67;
-  color: #cdcbcb;
-}
-
-footer a, footer a:hover {
-  color: #cdcbcb;
-}
-
-footer h1,
-footer h2,
-footer h3,
-footer h4,
-footer h5 {
-  color: white;
-}
-
-footer .inline.links a {
-  display: inline-block;
-  padding: 0 50px 20px 0;
-}
+/*============================================================================*/
+/*=== Classes ================================================================*/
+/*============================================================================*/
+.display.block { display: block; }
