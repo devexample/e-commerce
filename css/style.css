@@ -22,6 +22,7 @@ body {
 h1,h2,h3,h4,h5 { font-weight: 300; }
 h1 { font-size: 2.5em; }
 h2 { font-size: 1.8em; }
+h5 { font-size: 1.2em; }
 
 /*h2 { font-size: 1.8em; font-weight: 300; }
 h3 { font-size: 1.6em; font-weight: 300; }
@@ -55,6 +56,19 @@ footer .inline.links a {
   padding: 0 50px 20px 0;
 }
 
+footer .social.button{
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 1.2em;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  margin: 0 5px;
+}
+
+footer .social.button i{
+  margin-top: 8px;
+}
 /*============================================================================*/
 /*=== Ad =====================================================================*/
 /*============================================================================*/
@@ -178,33 +192,141 @@ section h2:first-child {
 /*=== Header =================================================================*/
 /*============================================================================*/
 header {
-  border-bottom: 1px solid #ddd;
   box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
   background-color: white;
-  /*position: fixed;*/
-  top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
 }
 
-header .menu {
-  min-height: 58px;
-}
-
-header .top.section {
+header .main.menu {
   border-bottom: 1px solid #ddd;
 }
-/*header.position.fixed .top.section {display: none;}*/
 
-header .top.section .menu .item { font-size: 1em; font-weight: normal; }
+
+
+
+
+/*header {
+
+
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}*/
+
+/*header .menu {
+  min-height: 58px;
+}*/
+
+header .top.menu {
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+
+header .telephone { font-size: 1.2em; font-weight: normal; }
+header i.fa.fa-bars { font-size: 1.4em; margin: 50% auto; }
+
+
+
 /*============================================================================*/
 /*=== Main ===================================================================*/
 /*============================================================================*/
-main.fixed {
-  padding-top: 58px;
+main.margined {
+  margin-top: 51px;
 }
 /*============================================================================*/
 /*=== Classes ================================================================*/
 /*============================================================================*/
 .display.block { display: block; }
+.display.inline.block { display: inline-block; }
+.display.none { display: none !important; }
+.emphasis.not { color: #8c8c8c; }
+.margin.auto { margin: auto }
+.max.w100px { max-width: 100px; }
+.max.w200px { max-width: 200px; }
+.max.w300px { max-width: 300px; }
+.max.w400px { max-width: 400px; }
+.max.w500px { max-width: 500px; }
+.max.w600px { max-width: 600px; }
+.max.w700px { max-width: 700px; }
+.max.w800px { max-width: 800px; }
+.max.w900px { max-width: 900px; }
+.max.w1000px { max-width: 1000px; }
+.max.w1100px { max-width: 1100px; }
+.max.w1200px { max-width: 1200px; }
+.no.margin { margin: 0 !important; }
+.no.padding { padding: 0 !important; }
+.position.absolute { position: absolute; }
+.position.fixed { position: fixed; }
+.position.relative { position: relative; }
+.size.big { font-size: 1.2em; }
+.text.blue { color: #0077bd; }
+.text.dark.gray { color: #666; }
+.valign.middle { vertical-align: middle; }
+.w50per { width: 50%; }
+.w100per { width: 100%; }
+
+/*============================================================================*/
+/*==== Button ================================================================*/
+/*============================================================================*/
+.button {
+  background: #E0E1E2;
+  border: none;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.6);;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: bold;
+  outline: none;
+  padding: 10px 25px;
+  margin: 0 5px;
+  text-decoration: none !important;
+  text-align: center;
+}
+.button:hover {
+  background-color: #CACBCD;
+  color: rgba(0, 0, 0, 0.8);
+}
+.button.basic {
+  border: 1px solid #ddd !important;
+  background: none !important;
+  padding: 9px 24px;
+}
+.button.orange {
+  background: #e85c40;
+  color: white;
+}
+.button.orange:hover {
+  background: #af3a2b;
+  color: #f8f8f8;
+}
+.button.orange.basic {
+  border: 1px solid #e85c40 !important;
+  color: #e85c40;
+}
+.button.orange.basic:hover {
+  border: 1px solid #af3a2b !important;
+  color: #af3a2b;
+}
+.button.blue {
+  background: #2eb6ec;
+  color: white;
+}
+.button.blue:hover {
+  background: #1b98bf;
+  color: #f8f8f8;
+}
+.button.blue.basic {
+  border: 1px solid #2eb6ec !important;
+  color: #2eb6ec;
+}
+.button.blue.basic:hover {
+  border: 1px solid #1b98bf !important;
+  color: #1b98bf;
+}

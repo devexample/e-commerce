@@ -37,8 +37,7 @@
 @media (max-width: 767px) {
   /*body { border: 2px solid orange;}/**/
   .hide.when.small { display: none; }
-  .show.when.small { display: block; }
-
+  .show.when.small { display: inherit; }
   .grid { display: block; width: auto;}
   .grid > .column {
     display: block;
@@ -51,8 +50,16 @@
   }
 
   .menu.stackable, .menu.stackable .item { display: block; height: auto; text-align: center; }
+  /*.menu.stackable { padding-bottom: 10px; padding-top: 10px; }*/
+  .menu.stackable .item { padding: 0 10px 10px 10px; }
+  .menu.stackable .item:first-child { padding-top: 10px; }
+  .menu.stackable .item.menu { padding: 0; }
 
-  .menu.stackable { padding-bottom: 10px; padding-top: 10px; }
+  /*.button { margin: 10px 0;}*/
+
+
+
+
 
   /* Layout ajustes */
   /*header { position: static; }
@@ -72,4 +79,11 @@
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
 	/*body { border: 2px solid red;}/**/
+  .hide.when.mini { display: none; }
+  .show.when.mini { display: block; }
+
+  .button { display: block; }
+  .button { margin: 10px 0; }
+  .button:first-child { margin-top: 0; }
+  .button:last-child { margin-bottom: 0; }
 }

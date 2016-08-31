@@ -1,71 +1,9 @@
 /*============================================================================*/
-/*==== Button ================================================================*/
-/*============================================================================*/
-.button {
-  background: #E0E1E2;
-  border: none;
-  border-radius: 4px;
-  color: rgba(0, 0, 0, 0.6);;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 0.9em;
-  font-weight: bold;
-  outline: none;
-  padding: 10px 25px;
-  margin: 10px;
-  text-decoration: none !important;
-}
-.button:hover {
-  background-color: #CACBCD;
-  color: rgba(0, 0, 0, 0.8);
-}
-.button.basic {
-  border: 1px solid #ddd !important;
-  background: none !important;
-  padding: 9px 24px;
-}
-.button.orange {
-  background: #e85c40;
-  color: white;
-}
-.button.orange:hover {
-  background: #af3a2b;
-  color: #f8f8f8;
-}
-.button.orange.basic {
-  border: 1px solid #e85c40 !important;
-  color: #e85c40;
-}
-.button.orange.basic:hover {
-  border: 1px solid #af3a2b !important;
-  color: #af3a2b;
-}
-.button.blue {
-  background: #2eb6ec;
-  color: white;
-}
-.button.blue:hover {
-  background: #1b98bf;
-  color: #f8f8f8;
-}
-.button.blue.basic {
-  border: 1px solid #2eb6ec !important;
-  color: #2eb6ec;
-}
-.button.blue.basic:hover {
-  border: 1px solid #1b98bf !important;
-  color: #1b98bf;
-}
-
-
-
-/*============================================================================*/
 /*==== Menu ==================================================================*/
 /*============================================================================*/
 .menu {
   display: flex;
   font-weight: bold;
-  height: 50px;
 }
 .menu.right {
   margin-left: auto;
@@ -76,6 +14,7 @@
   color: #8d8d8d;
   cursor: pointer;
   display: flex;
+  height: 50px;
   padding: 0 15px;
   /*position: relative;*/
   text-decoration: none;
@@ -91,8 +30,3 @@
 .container {
   padding: 10px 20px;
 }
-
-.table { display: table; }
-.table.container { padding: 0; }
-.table .cell { display: table-cell; }
-.table.container > .cell { padding: 10px 20px; }
