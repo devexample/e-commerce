@@ -1,3 +1,5 @@
+.show.when.small { display: none; }
+
 /* Large desktops and laptops */
 @media (min-width: 1600px) {
 	/*body { border: 2px solid brown;}/**/
@@ -16,16 +18,24 @@
 /* Portrait tablets and medium desktops */
 @media (max-width: 1199px) {
 	/*body { border: 2px solid green;}/**/
+  .hide.when.big { display: none; }
 }
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
 	/*body { border: 2px solid cyan;}/**/
+  .hide.when.medium { display: none; }
+  .w100per.when.medium { width: 100%; }
+
+  header .logo { width: 180px }
+  .menu .item { padding: 0 10px; }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-	/*body { border: 2px solid orange;}/**/
+  /*body { border: 2px solid orange;}/**/
+  .hide.when.small { display: none; }
+  .show.when.small { display: inherit; }
   .grid { display: block; width: auto;}
   .grid > .column {
     display: block;
@@ -37,16 +47,38 @@
     border-right: 1px dashed #ddd;
   }
 
-  header .menu > .item:not(.logo) { display: none; }
-  header .menu { padding-left: 10px; padding-right: 10px; }
-  section { padding: 10px; }
-  section.advertisement { text-align: center; }
-  section iframe { position: relative; }
-  section.advertisement h2 { font-size: 1.5em !important; }
+  .menu.stackable, .menu.stackable .item { display: block; height: auto; text-align: center; }
+  /*.menu.stackable { padding-bottom: 10px; padding-top: 10px; }*/
+  .menu.stackable .item { padding: 0 10px 10px 10px; }
+  .menu.stackable .item:first-child { padding-top: 10px; }
+  .menu.stackable .item.menu { padding: 0; }
+
+  /*.button { margin: 10px 0;}*/
+
+  /* Layout ajustes */
+  /*header { position: static; }
+  header.position.fixed .top.section { display: none !important; }*/
+  /*main { padding: 0; }*/
+
+
+  /*header .menu > .item:not(.logo) { display: none; }*/
+  /*header .menu { padding-left: 10px; padding-right: 10px; }*/
+  main section { padding: 10px; }
+  main section.advertisement { text-align: center; }
+  main section iframe { position: relative; }
+  .video.frame { width: 100% !important; }
+  main section.advertisement h2 { font-size: 1.5em !important; }
   footer { padding: 10px; }
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
 	/*body { border: 2px solid red;}/**/
+  .hide.when.mini { display: none; }
+  .show.when.mini { display: block; }
+
+  .button { display: block; }
+  .button { margin: 10px 0; }
+  .button:first-child { margin-top: 0; }
+  .button:last-child { margin-bottom: 0; }
 }
