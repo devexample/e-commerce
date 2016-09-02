@@ -16,7 +16,8 @@
 }
 
 /* Portrait tablets and medium desktops */
-@media (max-width: 1199px) {
+/*@media (max-width: 1199px) {*/
+@media (max-width: 1280px) {
 	/*body { border: 2px solid green;}/**/
   .hide.when.big { display: none; }
 }
@@ -69,6 +70,17 @@
   .video.frame { width: 100% !important; }
   main section.advertisement h2 { font-size: 1.5em !important; }
   footer { padding: 10px; }
+
+
+  .menu.stackable.celled .item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+  }
+  .menu.stackable.celled .item:first-child {
+    border-top: 1px solid #ddd;
+  }
+
 }
 
 /* Landscape phones and smaller */
