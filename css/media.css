@@ -1,0 +1,91 @@
+.show.when.small { display: none; }
+
+/* Large desktops and laptops */
+@media (min-width: 1600px) {
+	/*body { border: 2px solid brown;}*/
+}
+
+/* Large desktops and laptops */
+@media /*(min-width: 1200px) and*/ (max-width: 1599px) {
+	/*body { border: 2px solid yellow;}/**/
+}
+
+/* Portrait tablets and medium desktops */
+@media /*(min-width: 992px) and*/ (max-width: 1199px) {
+	/*body { border: 2px solid green;}*/
+}
+
+/* Portrait tablets and medium desktops */
+/*@media (max-width: 1199px) {*/
+@media (max-width: 1280px) {
+	/*body { border: 2px solid green;}*/
+  .hide.when.big { display: none; }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+	/*body { border: 2px solid cyan;}*/
+  .hide.when.medium { display: none; }
+  .w100per.when.medium { width: 100%; }
+
+  /* Logo */
+  header .logo { width: 180px }
+
+  /* Menu */
+  .menu .item { padding: 0 10px; }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  /*body { border: 2px solid orange;}*/
+  .hide.when.small { display: none; }
+  .show.when.small { display: inherit; }
+
+  /* Main */
+  main section { padding: 10px; }
+  main section.advertisement { text-align: center; }
+  main section iframe { position: relative; }
+  main section.advertisement h2 { font-size: 1.5em !important; }
+
+  /* Footer */
+  footer { padding: 10px; }
+
+  /* Grid */
+  .grid { display: block; width: auto;}
+  .grid > .column {
+    display: block;
+    width: 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .dashed.columns .grid > .column:first-child { border-right: 1px dashed #ddd; }
+
+  /* Menu */
+  .menu.stackable, .menu.stackable .item { display: block; height: auto; text-align: center; }
+  .menu.stackable .item { padding: 0 10px 10px 10px; }
+  .menu.stackable .item:first-child { padding-top: 10px; }
+  .menu.stackable .item.menu { padding: 0; }
+  .menu.stackable.celled .item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+  }
+  .menu.stackable.celled .item:first-child { border-top: 1px solid #ddd; }
+
+  /* Videos */
+  .video.frame { width: 100% !important; }
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	/*body { border: 2px solid red;}*/
+  .hide.when.mini { display: none; }
+  .show.when.mini { display: block; }
+
+  /* Button */
+  .button { display: block; }
+  .button { margin: 10px 0; }
+  .button:first-child { margin-top: 0; }
+  .button:last-child { margin-bottom: 0; }
+}
