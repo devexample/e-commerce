@@ -5,12 +5,16 @@
   var jqMain = $("main");
   var jqToHideWhenScroll = $(".hide.when.scroll");
   var jqToShowWhenScroll = $(".visible-when-scroll");
+  var jqBarsMenu = $("i.fa-bars");
+  var jqMenu = $(".menu.stackable.hidden")
 
   // Evnets functions
   window.onscroll = function() {
     hideHeaderTopMenu( window.pageYOffset );
     setHeaderSticky( window.pageYOffset );
   };
+
+  jqBarsMenu.click(showMenu);
 
   // Functions
   function hideHeaderTopMenu( yAxis ) {
@@ -34,5 +38,12 @@
       jqHeader.removeClass("position fixed");
       jqMain.css({marginTop: 0});
     }
+  }
+
+  function showMenu() {
+    if( jqMenu.is(':visible') )
+      jqMenu.slideUp();
+    else
+      jqMenu.slideDown();
   }
 })();
