@@ -41,7 +41,9 @@
   }
 
   function showMenu() {
-    console.log(jqMenu[0])
-    jqMenu.slideDown();
+    if( jqMenu.is(':visible') )
+      jqMenu.slideUp();
+    else
+      jqMenu.slideDown();
   }
 })();
